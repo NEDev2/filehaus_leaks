@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #1DB954; /* Spotify Green */
+    --secondary-color: #1ED760; /* Lighter Green */
+    --background-color: #121212; /* Dark Background */
+    --card-background-color: #1C1C1C; /* Slightly lighter for contrast */
+    --text-color: #EAEAEA; /* Almost white for better readability */
+    --button-glow-color: rgba(29, 185, 84, 0.5);
+    --button-hover-glow-color: rgba(30, 215, 96, 0.5);
+    --font-size: 16px;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+main {
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 53px;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.subtitle_2121 {
+    color: #FFFFFF;
+    font-size: 21px;
+}
+
+.upload_button_20201 {
+    /* Styles for SVG button */
+    cursor: pointer;
+}
+
+.upload_button_20201:hover {
+    /* Add styles for hover effect for SVG button */
+}
+
+#dropZone {
+    border: 2px dashed var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--card-background-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#imagePreview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#imagePreview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
