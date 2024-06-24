@@ -68,8 +68,8 @@ function uploadImages() {
 
     const xhr = new XMLHttpRequest();
     //xhr.open('PUT', 'http://localhost:8010/proxy/api/upload/'); // LocalHost endpoint
+    //xhr.setRequestHeader("Access-Control-Allow-Origin", '*'); // an unsuccessful attempt to bypass CORS
     xhr.open('PUT', 'https://filehaus.top/api/upload/');
-    xhr.setRequestHeader("Access-Control-Allow-Origin", '*');
     xhr.onload = function() {
         if (xhr.status === 200) {
             alert('Files uploaded successfully');
